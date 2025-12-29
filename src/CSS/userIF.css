@@ -1,0 +1,137 @@
+/* Root background */
+.root {
+    -fx-background-color: #1c1c1c;
+}
+
+/* ScrollPane transparent so root background shows */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Content section */
+.content {
+    -fx-background-color: #1c1c1c;
+}
+
+/* Nav bar */
+.nav-bar {
+    -fx-background-color: #2a2a2a;
+    -fx-alignment: center;
+}
+
+.nav-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+
+
+/* Hero */
+.hero-image { -fx-opacity: 0.6; }
+.hero-text {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+/* Search */
+.search {
+    -fx-background-color: #1c1c1c;
+}
+.search .text-field,
+.search .combo-box {
+    -fx-background-color: #262626;   /* dark gray background */
+    -fx-text-fill: #ffffff;          /* typed text white */
+    -fx-prompt-text-fill: #aaaaaa;   /* lighter gray placeholder */
+    -fx-border-color: #333333;
+    -fx-pref-width: 200;
+}
+
+/* ComboBox dropdown */
+.combo-box .list-cell {
+    -fx-background-color: #262626;
+    -fx-text-fill: #cccccc;          /* lighter gray text */
+}
+.combo-box .list-cell:filled:selected,
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: #333333;   /* slightly lighter gray highlight */
+    -fx-text-fill: #ffffff;
+}
+
+/* Car grid and cards */
+.car-card {
+    -fx-background-color: #2c2c2c;
+    -fx-padding: 20;
+    -fx-spacing: 12;
+    -fx-alignment: center;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8,0,0,3);
+    -fx-max-width: Infinity;
+}
+.car-grid {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+.car-name {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.price-label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-padding: 8 20 8 20;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: #2196f3; }
+.button:pressed { -fx-background-color: #0d47a1; }
+
+/* Dark scrollbar */
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #1c1c1c;
+}
+.scroll-pane .thumb {
+    -fx-background-color: #444444;
+    -fx-background-radius: 6;
+}
+.scroll-pane .thumb:hover {
+    -fx-background-color: #5a5a5a;
+}
+.profile-circle {
+    -fx-background-color: transparent;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+}
+
+.mode-toggle {
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 6 12;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.mode-toggle:hover {
+    -fx-background-color: #555555;
+}
+

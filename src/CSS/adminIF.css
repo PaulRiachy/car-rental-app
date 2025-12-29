@@ -1,0 +1,104 @@
+.root {
+    -fx-background-color: #1c1c1c;
+}
+
+
+.nav-bar {
+    -fx-background-color: #2a2a2a;
+    -fx-alignment: center;
+}
+
+.nav-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+
+.table-view {
+    -fx-background-color: #1c1c1c;
+    -fx-control-inner-background: #1c1c1c;
+    -fx-table-cell-border-color: #555555;   /* lighter grey borders */
+    -fx-border-color: #555555;              /* outer border */
+    -fx-border-width: 1;
+}
+
+
+.table-row-cell {
+    -fx-background-color: #1c1c1c;
+    -fx-border-color: #555555;              /* row separator */
+    -fx-border-width: 0 0 1 0;              /* bottom border only */
+}
+
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #0d47a1;
+    -fx-text-fill: #ffffff;
+}
+
+
+.table-cell {
+    -fx-text-fill: #e0e0e0;
+}
+
+.button {
+    -fx-background-color: #1976d2; /* base blue */
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-padding: 10 24 10 24;
+
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+/* Hover: lighter blue for feedback */
+.button:hover {
+    -fx-background-color: #2196f3;
+}
+
+/* Pressed: darker shade */
+.button:pressed {
+    -fx-background-color: #0d47a1;
+}
+.text-field, .password-field {
+    -fx-background-color: #262626;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-border-color: #333333;
+    -fx-pref-width: 250;
+}
+.scroll-pane {
+    -fx-background: #1c1c1c;          /* dark background */
+    -fx-background-color: #1c1c1c;
+    -fx-border-color: #333333;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #1c1c1c;    /* ensures content area is dark */
+}
+
+/* Vertical scrollbar */
+.scroll-bar:vertical {
+    -fx-background-color: #1c1c1c;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #444444;    /* thumb color */
+    -fx-background-radius: 4;
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #666666;
+}
+
+/* Horizontal scrollbar */
+.scroll-bar:horizontal {
+    -fx-background-color: #1c1c1c;
+}
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #444444;
+    -fx-background-radius: 4;
+}
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #666666;
+}

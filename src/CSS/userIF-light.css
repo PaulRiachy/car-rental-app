@@ -1,0 +1,137 @@
+/* Root background */
+.root {
+    -fx-background-color: #f5f5f5;
+}
+
+/* ScrollPane transparent so root background shows */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Content section */
+.content {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Nav bar */
+.nav-bar {
+    -fx-background-color: #e0e0e0; /* light gray */
+    -fx-alignment: center;         /* ✅ vertical centering */
+}
+.nav-title {
+    -fx-text-fill: #000000;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Profile circle */
+.profile-circle {
+    -fx-background-color: transparent;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+    -fx-alignment: center;   /* ✅ keep image centered */
+    -fx-cursor: hand;
+}
+
+/* Mode toggle button */
+.mode-toggle {
+    -fx-background-color: #dddddd;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-padding: 6 12;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-alignment: center;   /* ✅ vertically centered */
+}
+.mode-toggle:hover {
+    -fx-background-color: #bbbbbb;
+}
+
+/* Hero */
+.hero-image { -fx-opacity: 0.9; }
+.hero-text {
+    -fx-text-fill: #ffffff;
+        -fx-font-size: 28px;
+        -fx-font-weight: bold;
+}
+
+/* Search */
+.search {
+    -fx-background-color: #f5f5f5;
+}
+.search .text-field,
+.search .combo-box {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #666666;   /* lighter gray placeholder */
+    -fx-border-color: #cccccc;
+    -fx-pref-width: 200;
+}
+
+/* ComboBox dropdown */
+.combo-box .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #666666;
+}
+.combo-box .list-cell:filled:selected,
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: #dddddd;
+    -fx-text-fill: #000000;
+}
+
+/* Car grid and cards */
+.car-card {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-spacing: 12;
+    -fx-alignment: center;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6,0,0,2);
+    -fx-max-width: Infinity;
+}
+.car-grid {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+.car-name {
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.price-label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-padding: 8 20 8 20;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: #2196f3; }
+.button:pressed { -fx-background-color: #0d47a1; }
+
+/* Light scrollbar */
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: #f5f5f5;
+}
+.scroll-pane .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 6;
+}
+.scroll-pane .thumb:hover {
+    -fx-background-color: #999999;
+}
